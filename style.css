@@ -1,0 +1,50 @@
+:root {
+    --bg-light: #ffffff;
+    --text-light: #000000;
+    --bg-dark: #0f0f0f;
+    --text-dark: #ffffff;
+
+}
+
+body {
+    margin: 0;
+    height: 100hv;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: bakcground 0.3s ease, color 0.3s ease;
+}
+
+body.light {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+}
+
+body.dark {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+.clock-container {
+    text-align: center;
+}
+
+.clock {
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: 0.4rem; /* Increased letter spacing for better readability */
+}
+
+/* Toggle Button Styles */
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: inherit;
+
+}
